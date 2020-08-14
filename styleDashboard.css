@@ -1,0 +1,133 @@
+    body {
+            background-color: #eeeeee;
+            height: 775px;
+            width: 1385px;
+        }
+
+        div {
+            background-color: white;
+            border-radius: 20px;
+        }
+
+        header {
+            background-color: #67DAE2;
+            height: 35px;
+            width: 100%;
+            border-radius: 20px 20px 0px 0px;
+        }
+
+        .siloFilling {
+            position: absolute;
+            top: 40px;
+            left: 50px;
+            height: 140px;
+            width: 400px;
+        }
+
+        .extraFire {
+            position: absolute;
+            top: 220px;
+            left: 50px;
+            height: 140px;
+            width: 400px;
+        }
+
+        .tonnInSilo {
+            position: absolute;
+            top: 400px;
+            left: 50px;
+            height: 395px;
+            width: 400px;
+        }
+
+        .silo1 {
+            position: absolute;
+            top: 40px;
+            left: 490px;
+            height: 225px;
+            width: 900px;
+        }
+
+        .silo2 {
+            position: absolute;
+            top: 305px;
+            left: 490px;
+            height: 225px;
+            width: 900px;
+        }
+
+        .silo3 {
+            position: absolute;
+            top: 570px;
+            left: 490px;
+            height: 225px;
+            width: 900px;
+        }
+
+        button {
+            height: 30px;
+            width: 200px;
+            background-color: #FFDBE4;
+            border-radius: 7px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            font-family: tahoma;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+            button:hover {
+                cursor: pointer;
+                background-color: #FF80DA;
+            }
+
+            button:after {
+                border: none;
+            }
+
+        input[type=checkbox] {
+            transform: scale(1.5);
+            position: absolute;
+            top: 70px;
+            cursor: pointer;
+        }
+
+        label {
+            font-family: tahoma;
+            font-size: 11pt;
+            font-weight: bold;
+            position: absolute;
+            top: 70px;
+        }
+
+        h3 {
+            position: absolute;
+            font-family: tahoma;
+            font-size: 9pt;
+            font-weight: 400;
+        }
+
+        h2 {
+            position: absolute;
+            top: 40px;
+            font-family: tahoma;
+            font-size: 11pt;
+            font-weight: normal;
+        }
+
+        div.google-visualization-tooltip {
+            width: 60px;
+            height: 35px;
+            background-color: #FFFFFF;
+            color: #000000;
+            text-align: center;
+            vertical-align: middle;
+            z-index: 500;
+            font-weight: bold;
+        }
+
+        svg > g > g:last-child { /* Stops the tooltips from flickering */
+            pointer-events: none
+        }

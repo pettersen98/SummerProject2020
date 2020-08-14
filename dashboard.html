@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="dashboard.js"></script>
+    <meta charset="utf-8" />
+    <link href="styleDashboard.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="siloFilling">
+        <header></header>
+        <h3 style="left: 120px; top: 30px;">Select which silos to fill in:</h3>
+        <input type="checkbox" id="checkSilo1" style="left: 30px;">
+        <label style="left: 60px;"> Silo 1 </label>
+        <input type="checkbox" id="checkSilo2" style="left: 160px;">
+        <label style="left: 190px;"> Silo 2 </label>
+        <input type="checkbox" id="checkSilo3" style="left: 290px;">
+        <label style="left: 320px;"> Silo 3 </label>
+        <button onclick="drawNewCharts()">Update graphs</button>
+    </div>
+
+    <div class="extraFire">
+        <header></header>
+        <h3 style="left:78px; top:30px;">Select which furnaces that has extra power: </h3>
+        <input type="checkbox" id="checkFurnace1" style="left: 30px;">
+        <label style="left: 60px;"> 1st </label>
+        <input type="checkbox" id="checkFurnace2" style="left: 160px;">
+        <label style="left: 190px;"> 2nd </label>
+        <input type="checkbox" id="checkFurnace3" style="left: 290px;">
+        <label style="left: 320px;"> 3rd </label>
+        <button onclick="drawNewCharts()">Update graphs</button>
+    </div>
+
+    <div class="tonnInSilo">
+        <header></header>
+        <h2 style="left:90px;">Estimated amount of dust in silos: </h2>
+        <label style="left:280px; top: 280px; z-index: 300;">Totalt:</label>
+        <label id="labelTonn" style="left:260px; top: 310px; z-index: 300;">396,33 [tonn]</label>
+    </div>
+
+    <div id="donutchart" style="z-index: 250; position:absolute; left:80px; top: 500px; width:360px; height: 280px;"></div>
+
+    <div id="areaChart1" style="z-index: 100; position:absolute; left:660px; top: 80px; width:720px; height: 170px"></div>
+
+    <div id="areaChart2" style="z-index: 100; position:absolute; left:660px; top: 345px; width:720px; height: 170px"></div>
+
+    <div id="areaChart3" style="z-index: 100; position:absolute; left:660px; top: 610px; width:720px; height: 170px"></div>
+
+    <div class="silo1">
+        <header></header>
+        <h3 style="left:30px; top:45px;">Silo 1:</h3>
+        <label id="labelHeight1" style="left:50px; top: 100px; z-index: 300;">Height: [m]</label>
+        <label id="labelSpace1" style="left:50px; top: 150px; z-index: 300;">Space: [m]</label>
+        <h3 style="left:430px; top:35px; z-index:300">Prognosis over meter extra space in nearest future: </h3>
+        <div id="hidden_div1" style="display:none"></div>
+    </div>
+
+    <div class="silo2">
+        <header></header>
+        <h3 style="left:30px; top:45px;">Silo 2:</h3>
+        <label id="labelHeight2" style="left:50px; top: 100px; z-index: 300;">Høyde: [m]</label>
+        <label id="labelSpace2" style="left:50px; top: 150px; z-index: 300;">Fribord: [m]</label>
+        <h3 style="left:430px; top:35px; z-index:300">Prognosis over meter extra space in nearest future: </h3>
+    </div>
+
+    <div class="silo3">
+        <header></header>
+        <h3 style="left:30px; top:45px;">Silo 3:</h3>
+        <label id="labelHeight3" style="left:50px; top: 100px; z-index: 300;">Høyde: [m]</label>
+        <label id="labelSpace3" style="left:50px; top: 150px; z-index: 300;">Fribord: [m]</label>
+        <h3 style="left:430px; top:35px; z-index:300">Prognosis over meter extra space in nearest future: </h3>
+    </div>
+
+</body>
+
+</html>
