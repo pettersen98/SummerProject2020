@@ -1,0 +1,290 @@
+﻿
+h1 {
+    font-size: 36pt;
+    color: #ffffff;
+    text-align: center;
+}
+table, td, th {
+    border: 1px solid black;
+}
+
+td {
+    text-align:center;
+    background-color: #FFECBC;
+}
+
+table {
+    border-collapse: collapse;
+    width: 220px;
+}
+
+th {
+    height: 30px;
+    background-color: #ffd698;
+}
+
+img.materialImg {
+    position: absolute; 
+    left: 30px;
+    height:40px; 
+    width: 40px;
+}
+
+img.logo {
+    top: 10px;
+    width: 450px;
+    height: 105px;
+    position: absolute; left: 500px;
+}
+.materialLabel {
+    font-size: 16pt; 
+    position:absolute; left: 90px;
+}
+.column {
+    float: left;
+    padding: 20px;
+    height: 400px;
+}
+
+.withoutElektrode {
+    width: 5.5%;
+    background-color: white;
+}
+
+.withElektrode {
+    background-color: white;
+    width: 9.5%;
+}
+
+img.elektrode {
+    height: 420px;
+    width: 90px;
+    margin-left: 7px;
+    position:absolute; left: auto; top: auto;
+    border-radius: 0px 0px 30% 30%;
+    overflow: hidden;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gap {
+    width: 100%;
+    height: 50px !important;
+}
+
+.buttonSpace {
+    height: 15%;
+}
+
+.imageButtons {
+    height: 45px;
+    width: 45px;
+    cursor: pointer;
+    left: 20px;
+    margin-left: 15px;
+}
+.imageButtons:hover {
+    cursor: pointer;
+}
+.labelKA {
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    font-size: 15pt;
+    font-family: 'Lucida Grande';
+    text-shadow: 1px;
+    color: black;
+    margin-left: 15px;
+    align-content: center;
+}
+.labelSpace {
+    height: 10%;
+}
+
+.labelSpace2 {
+    height: 15%;
+}
+
+.pausePlayButton {
+    height: 70px;
+    width: 70px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.pausePlayButton:hover {
+    cursor: pointer;
+}
+.labelMW {
+    border: solid;
+    border-width: thin;
+    border-color: black;
+    font-size: 16pt;
+    font-family: 'Lucida Grande';
+    align-content: center;
+    margin-left: 15px;
+}
+
+.fireGif {
+    width: 1040px;
+    height: 140px;
+    z-index: 150;
+    position: absolute;
+    top: 560px;
+    left: 215px;
+    border-radius: 50% 50% 50% 50%;
+}
+
+
+.furnaceBottom {
+    background-color: black;
+    box-shadow: inset 45px 45px 45px 45px rgba(90, 90, 90, 0.5);
+    width: 1060px;
+    height: 220px;
+    z-index: 100;
+    position: absolute;
+    top: 615px;
+    left: 205px;
+    border-radius: 30px 30px 50% 50%;
+}
+
+.divElektrode {
+    width: 105px;
+    border-radius: 0px 0px 10% 10%;
+    z-index: 600;
+    overflow: hidden; 
+}
+
+
+.gameOver {
+    color: #d10000;
+    text-transform: uppercase;
+    font-size: 50pt;
+    border-style: none;
+    font-family: Verdana;
+    font-weight: bold;
+    position:absolute; left:505px; top:400px;
+    z-index: 700;
+}
+
+.againButton {
+    position: absolute;
+    left: 705px;
+    top: 500px;
+    width: 90px;
+    height: 90px;
+    z-index: 700;
+    
+    display: none;
+}
+
+.againButton:hover {
+    cursor: pointer;
+}
+
+.score {
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: green;
+    text-transform: uppercase;
+    font-size: 19pt;
+    font-weight: bold;
+    font-family: 'Lucida Grande';
+    position: absolute;
+    left: 650px;
+    top: 120px;
+}
+
+@keyframes changeColor {
+    50% {color: lightgreen;}
+}
+
+.saveScore {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6px 45px;
+    border-radius: 12px;
+    cursor: pointer;
+    position:absolute; left:1182px; top:520px;
+
+}
+
+.trinnUp {
+    width: 35px;
+    height: 35px;
+    position: absolute; top: 365px; left: 1252px;
+}
+
+.trinnDown {
+    width: 35px;
+    height: 35px;
+    position: absolute; top: 365px; left: 1290px;
+}
+
+.questionButton {
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    top: 95px;
+    left: 1210px;
+    cursor: pointer;
+}
+.questionButton:hover{
+    cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; 
+    z-index: 2000; 
+    padding-top: 100px;
+    padding-bottom: 50px;
+    top: 0px;
+    left: 0px; 
+    width: 100%; 
+    height: 100%; 
+    overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    font-family: Verdana;
+}
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+.modal-header {
+    padding: 1px 16px;
+    background-color: #66b2ff;
+    color: white;
+}
+
+.modal-body {
+    height: 600px;
+    padding: 2px 16px;
+    overflow-y: auto; /* Enable scroll if needed */
+}
+
